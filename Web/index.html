@@ -61,7 +61,56 @@
                     </div>
 
 
-                    <a href="./Views/profile/index.html" class="w-auto link-light link-underline-opacity-0">Profile</a>
+                    <!-- PROFIL -->
+                    <div class="dropdown show w-auto">
+                        <a 
+                            href="#" 
+                            role="button" 
+                            id="dropdownProfile" 
+                            data-bs-toggle="dropdown" 
+                            aria-haspopup="true" 
+                            aria-expanded="false" 
+                            class="link-light link-underline-opacity-0">
+                            Profil
+                        </a>
+
+                        <div class="dropdown-menu p-0" style="width:260px" aria-labelledby="dropdownProfile">
+                            <div class="p-2 d-flex">
+                                <div class="me-2">
+                                    <div class="bg-secondary rounded" style="width:64px; height: 64px;">
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="m-0">Paul</p>
+                                    <p class="text-body-tertiary m-0">Membre depuis 5 mois</p>
+                                </div>                                
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- REGISTER -->
+                    <!-- <div class="dropdown show w-auto">
+                        <a 
+                            href="#" 
+                            role="button" 
+                            id="dropdownRegister" 
+                            data-bs-toggle="dropdown" 
+                            aria-haspopup="true" 
+                            aria-expanded="false" 
+                            class="link-light link-underline-opacity-0">
+                            Se connecter
+                        </a>
+
+                        <div class="dropdown-menu p-2" style="width:260px" aria-labelledby="dropdownRegister">
+                            <p class="text-center mb-2 fw-bold">Connexion</p>
+                            <input type="email" name="" id="" placeholder="Email" class="form-control mb-2">
+                            <input type="password" name="" id="" placeholder="Mot de passe" class="form-control mb-2">
+                            <p class="m-0">Pas encore de compte ? <a href="#" class="link-primary link-underline-opacity-0">S'inscrire</a></p>
+                        </div>
+                    </div> -->
+
                 </div>                
             </div>
         </header>
@@ -70,11 +119,55 @@
             <div class="container h-100">
 
                 <!-- Content -->
-                <div class="row h-100 align-items-center justify-content-center">
-                    <div>
+                <div class="row justify-content-center">
+                    <!-- SEARCH -->
+                    <div class="mb-5">
                         <h2 class="text-center">Recherche de ressources</h2>
                         <input type="search" placeholder="Rechercher des ressources..." name="" id="" class="mx-auto form-control w-50">                        
                     </div>
+
+                    <!-- FILTERS -->
+                    <div>
+                        <input type="checkbox" id="pageContentFilter" class="btn-check" checked>
+                        <label class="btn btn-outline-primary" for="pageContentFilter">Pages de contenus</label>
+
+                        <input type="checkbox" id="pageExerResp" class="btn-check" checked>
+                        <label class="btn btn-outline-primary" for="pageExerResp">Exercices de respiration</label>
+                    </div>
+
+                    <!-- RESULTS -->
+                    <section class="row g-2">
+                        <article class="col-4">
+                            <a href="Views/content.html?id=1" role="button" class="card shadow-sm link-dark link-underline-opacity-0">
+                                <img src="" class="card-img-top bg-black" style="height:180px" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Page de contenus</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consectetur velit vel massa finibus rhoncus.</p>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="col-4">
+                            <a href="Views/content.html?id=2" role="button" class="card shadow-sm link-dark link-underline-opacity-0">
+                                <img src="" class="card-img-top bg-black" style="height:180px" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Page de contenus</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consectetur velit vel massa finibus rhoncus.</p>
+                                </div>
+                            </a>
+                        </article>
+
+
+                        <article class="col-4">
+                            <a href="Views/respEx.html?id=1" role="button" class="card shadow-sm link-dark link-underline-opacity-0">
+                                <img src="" class="card-img-top bg-black" style="height:180px" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Exercice de respiration</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consectetur velit vel massa finibus rhoncus.</p>
+                                </div>
+                            </a>
+                        </article>
+                    </section>
+
                 </div>      
                 
                 

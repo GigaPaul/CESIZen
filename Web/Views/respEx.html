@@ -6,7 +6,6 @@
     <title>CESIZen</title>
     <link rel="stylesheet" href="./../src/css/bootstrap.min.css">
     <link rel="stylesheet" href="./../styles/style.css">
-
 </head>
 <body>
     <main class="d-flex flex-column" style="height:100vh">
@@ -15,7 +14,7 @@
             <div class="container">
                 <div class="row justify-content-between align-items-center">
                     <div class="w-auto d-flex align-items-center">
-                        <a href="./../index.html" class="link-light link-underline-opacity-0">
+                        <a href="../index.html" class="link-light link-underline-opacity-0">
                             <h1>CESIZen</h1>
                         </a>
                         <div class="d-flex ms-4">
@@ -111,65 +110,60 @@
                             <p class="m-0">Pas encore de compte ? <a href="#" class="link-primary link-underline-opacity-0">S'inscrire</a></p>
                         </div>
                     </div> -->
+
                 </div>                
             </div>
         </header>
 
         <div class="flex-grow-1">
             <div class="container h-100">
-
-                <!-- Content -->
-                <div class="row mb-3">
-                    <div class="d-flex justify-content-around">
-                        <a href="#" class="link-underline link-underline-opacity-0"><h4 class="fw-bold text-primary">Pages de contenus</h4></a>
-                        <a href="#" class="link-underline link-underline-opacity-0"><h4 class="fw-bold text-primary">Exercices de respiration</h4></a>
+                <div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2 class="m-0 editable">Exercice de respiration</h1>
+                        <div>
+                            <p class="text-body-tertiary m-0">Il y a 3 mois par <strong>Paul</strong>.</p>
+                        </div>
                     </div>
+                    <p class="text-body-tertiary editable">Sous-titre explicatif</p>
                 </div>
 
-                <div class="row g-3">
-                    <div class="col-4">
-                        <div class="card shadow-sm ">
-                            <div class="card-body">
-                                <h5 class="card-title">Page de contenus 2</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pellentesque arcu eu consectetur congue. Ut nunc ex, varius nec dui tincidunt, sodales tincidunt tortor...</p>
-                            </div>
-                        </div>                        
-                    </div>
-                    <div class="col-4">
-                        <div class="card shadow-sm ">
-                            <div class="card-body">
-                                <h5 class="card-title">Page de contenus 2</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pellentesque arcu eu consectetur congue. Ut nunc ex, varius nec dui tincidunt, sodales tincidunt tortor...</p>
-                            </div>
-                        </div>                        
-                    </div>
-                    <div class="col-4">
-                        <div class="card shadow-sm ">
-                            <div class="card-body">
-                                <h5 class="card-title">Page de contenus 2</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pellentesque arcu eu consectetur congue. Ut nunc ex, varius nec dui tincidunt, sodales tincidunt tortor...</p>
-                            </div>
-                        </div>                        
-                    </div>
-                    <div class="col-4">
-                        <div class="card shadow-sm ">
-                            <div class="card-body">
-                                <h5 class="card-title">Page de contenus 2</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pellentesque arcu eu consectetur congue. Ut nunc ex, varius nec dui tincidunt, sodales tincidunt tortor...</p>
-                            </div>
-                        </div>                        
-                    </div>
-                    <div class="col-4">
-                        <div class="card shadow-sm ">
-                            <div class="card-body">
-                                <h5 class="card-title">Page de contenus 2</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pellentesque arcu eu consectetur congue. Ut nunc ex, varius nec dui tincidunt, sodales tincidunt tortor...</p>
-                            </div>
-                        </div>                        
-                    </div>
+                <div>
+                    <h4 class="editable">Lorem ipsum dolor sit amet</h4>
+                    <p class="editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="link-primary">Maecenas</span> consectetur velit vel massa finibus rhoncus. Duis nisi metus, ornare egestas cursus et, commodo quis augue. Vivamus tincidunt leo tempor lacus bibendum, at feugiat turpis malesuada. Aliquam erat volutpat. Phasellus eu ex mattis, suscipit nisi rhoncus, blandit mauris. Morbi ullamcorper mi quis nisi viverra bibendum. Proin eleifend diam ut dolor efficitur, vel imperdiet orci volutpat. In id tincidunt velit. Sed non maximus neque.</p>
+                    <ol>
+                        <li>Maecenas a iaculis nunc.</li>
+                        <li>Cras vel pellentesque nulla.</li>
+                        <li>Nunc quam enim, maximus id dignissim ut, molestie et neque.</li>
+                        <li>Aliquam elementum.</li>
+                        <li>Donec vestibulum cursus ullamcorper.</li>
+                    </ol>
                 </div>
-                
-                
+
+                <form action="" class="card m-auto shadow-sm mb-3" style="max-width:960px">
+                    <div class="card-header">
+                        <h4>Paramètres</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row gx-2 mb-3">
+                            <div class="col-6">
+                                <label for="respExCadency" class="form-label">Cadence de respiration</label>
+                                <input type="number" name="" id="respExCadency" class="form-control" min="2" step="1" max="20" value="4">
+                                <div class="form-text">Temps en seconde durant lequel il faut retenir sa respiration.</div>
+                            </div>
+                            <div class="col-6">
+                                <label for="respExRepet" class="form-label">Nombre de répétitions</label>
+                                <input type="number" name="" id="respExRepet" class="form-control" min="1" step="1" max="50" value="5">
+                                <div class="form-text">Nombre de répétitions à effectuer.</div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary text-center" type="submit">Enregistrer mes préférences</button>
+                    </div>
+                </form>
+
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-success btn-lg">Commencer l'exercice</button>
+                </div>
             </div>
         </div>
 
@@ -180,8 +174,9 @@
             </div>
         </footer>
     </main>
-    
-    </body>
-    <script src="./../src/js/jquery.min.js"></script>
-    <script src="./../src/js/bootstrap.bundle.min.js"></script>
-    </html>
+
+</body>
+<script src="./../src/js/jquery.min.js"></script>
+<script src="./../src/js/bootstrap.bundle.min.js"></script>
+<script src="./../scripts/content.js"></script>
+</html>

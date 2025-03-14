@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CESIZen</title>
+    <link rel="stylesheet" href="./../src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../styles/style.css">
+</head>
+<body>
+    <main class="d-flex flex-column" style="height:100vh">
+
+        <header class="bg-primary mb-4">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="w-auto d-flex align-items-center">
+                        <a href="../index.html" class="link-light link-underline-opacity-0">
+                            <h1>CESIZen</h1>
+                        </a>
+                        <div class="d-flex ms-4">
+                            <div class="dropdown show">
+                                <a 
+                                    href="#" 
+                                    role="button" 
+                                    id="dropdownNotif" 
+                                    data-bs-toggle="dropdown" 
+                                    aria-haspopup="true" 
+                                    aria-expanded="false" 
+                                    class="link-light link-underline-opacity-0">
+                                    Notifications
+                                </a>
+
+                                <div class="dropdown-menu bg-light-subtle" style="width:480px " aria-labelledby="dropdownNotif">
+                                    <div class="container w-75 mb-2">
+                                        <div class="row">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p class="fw-bold m-0">Exercice 1</h3>
+                                                    <p class="m-0">Une nouvelle ressource a été rajoutée à la catégorie <strong>Exercice de respiration</strong>.</p>
+                                                    <p class="m-0 text-body-tertiary">Découvrez-la maintenant!</p>
+                                                </div>
+                                            </div>                                             
+                                        </div>
+                                    </div>
+
+                                    <div class="container w-75">
+                                        <div class="row">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p class="fw-bold m-0">Exercice 1</h3>
+                                                    <p class="m-0">Une nouvelle ressource a été rajoutée à la catégorie <strong>Exercice de respiration</strong>.</p>
+                                                    <p class="m-0 text-body-tertiary">Découvrez-la maintenant!</p>
+                                                </div>
+                                            </div>                                             
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="liked.html" class="ms-2 link-light link-underline-opacity-0">Favoris</a>
+                        </div>
+                    </div>
+
+
+                    <!-- PROFIL -->
+                    <div class="dropdown show w-auto">
+                        <a 
+                            href="#" 
+                            role="button" 
+                            id="dropdownProfile" 
+                            data-bs-toggle="dropdown" 
+                            aria-haspopup="true" 
+                            aria-expanded="false" 
+                            class="link-light link-underline-opacity-0">
+                            Profil
+                        </a>
+
+                        <div class="dropdown-menu p-0" style="width:260px" aria-labelledby="dropdownProfile">
+                            <div class="p-2 d-flex">
+                                <div class="me-2">
+                                    <div class="bg-secondary rounded" style="width:64px; height: 64px;">
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="m-0">Paul</p>
+                                    <p class="text-body-tertiary m-0">Membre depuis 5 mois</p>
+                                </div>                                
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- REGISTER -->
+                    <!-- <div class="dropdown show w-auto">
+                        <a 
+                            href="#" 
+                            role="button" 
+                            id="dropdownRegister" 
+                            data-bs-toggle="dropdown" 
+                            aria-haspopup="true" 
+                            aria-expanded="false" 
+                            class="link-light link-underline-opacity-0">
+                            Se connecter
+                        </a>
+
+                        <div class="dropdown-menu p-2" style="width:260px" aria-labelledby="dropdownRegister">
+                            <p class="text-center mb-2 fw-bold">Connexion</p>
+                            <input type="email" name="" id="" placeholder="Email" class="form-control mb-2">
+                            <input type="password" name="" id="" placeholder="Mot de passe" class="form-control mb-2">
+                            <p class="m-0">Pas encore de compte ? <a href="#" class="link-primary link-underline-opacity-0">S'inscrire</a></p>
+                        </div>
+                    </div> -->
+
+                </div>                
+            </div>
+        </header>
+
+        <div class="flex-grow-1">
+            <div class="container h-100">
+                <div class="mb-5">
+                    <h2 class="text-center">Base de données utilisateur</h2>
+
+                    <input type="search" placeholder="Nom ou ID d'utilisateur" name="" id="" class="mx-auto form-control w-50">
+                </div>
+
+                <!-- FILTERS -->
+                <div class="d-flex justify-content-center mb-3">
+                    <input type="radio" name="typeUser" id="adminAllUsers" class="btn-check" checked>
+                    <label class="btn btn-outline-primary me-2" for="adminAllUsers">Tous les utilisateurs</label>
+
+                    <input type="radio" name="typeUser" id="adminBlacklist" class="btn-check me-2">
+                    <label class="btn btn-outline-primary me-2" for="adminBlacklist">Blacklist</label>
+
+                    <input type="radio" name="typeUser" id="adminWhitelist" class="btn-check">
+                    <label class="btn btn-outline-primary" for="adminWhitelist">Whitelist</label>
+                </div>
+                
+                <table class="table table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nom</th>
+                            <th>Inscription</th>
+                            <th>Dernier changement de statut</th>
+                            <th>Statut</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1221</td>
+                            <td><a href="#" class="link-primary">Paul</a></td>
+                            <td>10/04/2024 11:54</td>
+                            <td></td>
+                            <td><button type="button" class="btn btn-success btn-sm w-100">Actif</button></td>
+                            <td><a href="#" class="link-danger">Supprimer</a></td>
+                        </tr>
+                        <tr>
+                            <td>1222</td>
+                            <td><a href="#" class="link-primary">EvilPaul</a></td>
+                            <td>10/04/2024 11:54</td>
+                            <td>13/03/2025 14:55</td>
+                            <td><button type="button" class="btn btn-outline-danger btn-sm w-100">Banni</button></td>
+                            <td><a href="#" class="link-danger">Supprimer</a></td>
+                        </tr>
+                        <tr>
+                            <td>1221</td>
+                            <td><a href="#" class="link-primary">Paul</a></td>
+                            <td>10/04/2024 11:54</td>
+                            <td></td>
+                            <td><button type="button" class="btn btn-success btn-sm w-100">Actif</button></td>
+                            <td><a href="#" class="link-danger">Supprimer</a></td>
+                        </tr>
+                        <tr>
+                            <td>1221</td>
+                            <td><a href="#" class="link-primary">Paul</a></td>
+                            <td>10/04/2024 11:54</td>
+                            <td></td>
+                            <td><button type="button" class="btn btn-success btn-sm w-100">Actif</button></td>
+                            <td><a href="#" class="link-danger">Supprimer</a></td>
+                        </tr>
+                        <tr>
+                            <td>1221</td>
+                            <td><a href="#" class="link-primary">Paul</a></td>
+                            <td>10/04/2024 11:54</td>
+                            <td></td>
+                            <td><button type="button" class="btn btn-success btn-sm w-100">Actif</button></td>
+                            <td><a href="#" class="link-danger">Supprimer</a></td>
+                        </tr>
+                        <tr>
+                            <td>1221</td>
+                            <td><a href="#" class="link-primary">Paul</a></td>
+                            <td>10/04/2024 11:54</td>
+                            <td></td>
+                            <td><button type="button" class="btn btn-success btn-sm w-100">Actif</button></td>
+                            <td><a href="#" class="link-danger">Supprimer</a></td>
+                        </tr>
+                        <tr>
+                            <td>1221</td>
+                            <td><a href="#" class="link-primary">Paul</a></td>
+                            <td>10/04/2024 11:54</td>
+                            <td></td>
+                            <td><button type="button" class="btn btn-success btn-sm w-100">Actif</button></td>
+                            <td><a href="#" class="link-danger">Supprimer</a></td>
+                        </tr>
+                        <tr>
+                            <td>1221</td>
+                            <td><a href="#" class="link-primary">Paul</a></td>
+                            <td>10/04/2024 11:54</td>
+                            <td></td>
+                            <td><button type="button" class="btn btn-success btn-sm w-100">Actif</button></td>
+                            <td><a href="#" class="link-danger">Supprimer</a></td>
+                        </tr>
+                        <tr>
+                            <td>1221</td>
+                            <td><a href="#" class="link-primary">Paul</a></td>
+                            <td>10/04/2024 11:54</td>
+                            <td></td>
+                            <td><button type="button" class="btn btn-success btn-sm w-100">Actif</button></td>
+                            <td><a href="#" class="link-danger">Supprimer</a></td>
+                        </tr>
+                        <tr>
+                            <td>1221</td>
+                            <td><a href="#" class="link-primary">Paul</a></td>
+                            <td>10/04/2024 11:54</td>
+                            <td></td>
+                            <td><button type="button" class="btn btn-success btn-sm w-100">Actif</button></td>
+                            <td><a href="#" class="link-danger">Supprimer</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <nav>
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a href="#" class="page-link">Précédent</a>
+                        </li>
+                        <li class="page-item active">
+                            <a href="#" class="page-link">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">4</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">5</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">Suivant</a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+            </div>
+        </div>
+
+        <footer class="bg-dark text-light">
+            <div class="container">
+                <div class="row">
+                </div>                
+            </div>
+        </footer>
+    </main>
+
+</body>
+<script src="./../src/js/jquery.min.js"></script>
+<script src="./../src/js/bootstrap.bundle.min.js"></script>
+</html>
