@@ -8,10 +8,9 @@ import {
   TouchableOpacity,
   Button,
 } from 'react-native';
-import { Search } from 'lucide-react-native';
 import { styles } from '../../scripts/style.js'
 
-export default function AppLanding() {
+export default function ProfileScreen() {
   const [searchQuery, setSearchQuery] = useState('');
 
   return (

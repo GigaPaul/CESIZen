@@ -5,18 +5,22 @@ const secondaryColor = "#f7dc82";
 
 export const styles = StyleSheet.create({
     container: {
-        paddingTop: 25,
         flex: 1,
         backgroundColor: '#fff',
     },
     header: {
+        paddingTop: 41,
+        paddingBottom: 16,
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
         paddingHorizontal: 16,
-        paddingVertical: 16,
+        // paddingVertical: 16,
         borderBottomWidth: 1,
         borderBottomColor: '#eee',
+    },
+    header__right: {
+        flexDirection: 'row',
     },
     appName: {
         fontSize: 22,
@@ -35,27 +39,8 @@ export const styles = StyleSheet.create({
         textAlign: 'center',
         lineHeight: 22,
     },
-    searchContainer: {
-        width: '100%',
-        paddingHorizontal: 16,
-        paddingVertical: 12,
-    },
-    searchBar: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        backgroundColor: '#f2f2f2',
-        borderRadius: 10,
-        paddingHorizontal: 12,
-        height: 46,
-    },
     searchIcon: {
         marginRight: 8,
-    },
-    searchInput: {
-        flex: 1,
-        fontSize: 16,
-        color: '#333',
-        height: '100%',
     },
 
     // GENERAL
@@ -150,6 +135,67 @@ export const styles = StyleSheet.create({
         height: '100%',
     },
 
+    formText: {
+        opacity: 0.5,
+        fontSize: 10
+    },
+
+    m0: {
+        marginTop:0,
+        marginRight:0,
+        marginBottom:0,
+        marginLeft:0,
+        margin:0,
+    },
+
+    mb1: {
+        marginBottom: 8
+    },
+
+    mb2: {
+        marginBottom: 12
+    },
+
+    mb3: {
+        marginBottom: 16
+    },
+
+    mr1: {
+        marginRight: 8
+    },
+
+    mr2: {
+        marginRight: 12
+    },
+
+    mr3: {
+        marginRight: 16
+    },
+
+    card: {
+        backgroundColor: "white",
+        borderRadius: 5,
+        overflow: "hidden"
+    },
+
+    cardHead: {
+        backgroundColor: "whitesmoke"
+    },
+
+    cardBody: {
+        paddingVertical: 8,
+        paddingHorizontal: 16,
+    },
+
+    muted: {
+        opacity: 0.5,
+    },
+
+    ul: {
+        paddingStart: 16,
+        marginBottom: 8
+    },
+
     // CONTENT
     content: {
         flex: 1,
@@ -159,7 +205,7 @@ export const styles = StyleSheet.create({
     },
 
     content_index: {
-        justifyContent: 'center',
+        // justifyContent: 'center',
     },
 
     content_notif: {
@@ -182,6 +228,35 @@ export const styles = StyleSheet.create({
         paddingVertical: 32
     },
 
+    content_content: {
+
+    },
+
+
+    // INDEX
+    searchContainer: {
+        width: "100%"
+    },
+
+    ressourceResult: {
+        marginBottom: 16
+    },
+
+    ressourceResult__img: {
+        height: 100,
+        width: "100%",
+        backgroundColor: "black",
+    },
+
+    searchFilters: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+        marginBottom: 8
+    },
+
+    searchBtn: {
+        marginEnd: 8
+    },
 
 
     // NOTIF
@@ -293,5 +368,20 @@ export const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
         marginTop: 16
+    },
+
+
+    // CONTENT (Genre page content)
+    content__header: {
+        marginBottom: 16,
+    },
+    
+    content__text: {
+        marginBottom: 8
+    },
+
+    // BREATHING EXERCICE
+    exParam__inputGroup: {
+        marginBottom:8
     },
 });

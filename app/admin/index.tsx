@@ -11,7 +11,7 @@ import {
 import { Search } from 'lucide-react-native';
 import { styles } from '../../scripts/style.js'
 
-export default function AppLanding() {
+export default function AdminScreen() {
   const [searchQuery, setSearchQuery] = useState('');
 
   return (
@@ -21,11 +21,11 @@ export default function AppLanding() {
       {/* Main Content Area */}
       <View style={[styles.content, styles.content_admin]}>
         <Text style={styles.welcomeText}>Bases de données utilisateur</Text>
-        <View style={styles.searchContainer}>
-          <View style={styles.searchBar}>
+        <View style={styles.inputContainer}>
+          <View style={styles.inputParent}>
             <Search size={20} color="#666" style={styles.searchIcon} />
             <TextInput
-              style={styles.searchInput}
+              style={styles.inputText}
               placeholder="Nom ou ID d'utilisateur"
               value={searchQuery}
               onChangeText={setSearchQuery}

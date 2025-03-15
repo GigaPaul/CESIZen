@@ -5,7 +5,6 @@ import {
   TouchableOpacity, 
   SafeAreaView, 
   StatusBar,
-  Button
 } from 'react-native';
 import { User } from 'lucide-react-native';
 import { styles } from './../../scripts/style.js'
@@ -28,17 +27,7 @@ export default function LikedScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="dark-content" backgroundColor="#ffffff" />
-      
-      {/* Header */}
-      <View style={styles.header}>
-        <Text style={styles.appName}>CESIZen</Text>
-        <TouchableOpacity 
-          onPress={() => console.log('Navigate to profile')}
-        >
-          <User size={24} color="#333" />
-        </TouchableOpacity>
-      </View>
-      
+            
       {/* Main Content Area */}
       <View style={[styles.content, styles.content_liked]}>
         <Text style={[styles.h2, styles.textCenter]}>Contenu aimé</Text>
