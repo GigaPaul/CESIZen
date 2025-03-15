@@ -2,24 +2,43 @@ import React, { useState } from 'react';
 import { 
   View, 
   Text, 
-  TouchableOpacity, 
+  TextInput,
   SafeAreaView, 
-  StatusBar 
+  StatusBar,
+  TouchableOpacity,
+  Button,
 } from 'react-native';
-import { User } from 'lucide-react-native';
+import { Search } from 'lucide-react-native';
 import { styles } from '../../scripts/style.js'
 
+export default function AppLanding() {
+  const [searchQuery, setSearchQuery] = useState('');
 
-export default function ProfileScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="dark-content" backgroundColor="#ffffff" />
-    
-      
+
       {/* Main Content Area */}
-      <View style={[styles.content]}>
-        <Text>Profile</Text>
+      <View style={[styles.content, styles.content_profile]}>
+        <View style={styles.profileTexts}>
+          <View style={styles.profileTitle}>
+            <Text style={styles.h1}>Paul</Text>
+            <Text>#1234</Text>
+          </View>
+          <Text>Membre depuis 5 mois</Text>          
+        </View>
+
+        <View>
+          <TouchableOpacity><Button title="Supprimer les données personnelles" /></TouchableOpacity>
+          <View style={styles.importantButtons}>
+            <TouchableOpacity><Text style={[styles.link, styles.link_blue]}>Se déconnecter</Text></TouchableOpacity>
+            <TouchableOpacity><Text style={[styles.link, styles.link_red]}>Supprimer le compte</Text></TouchableOpacity>
+          </View>
+        </View>
       </View>
+      
+
     </SafeAreaView>
+
   );
 }

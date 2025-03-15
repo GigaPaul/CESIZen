@@ -97,6 +97,59 @@ export const styles = StyleSheet.create({
         display: "none"
     },
 
+    table: {
+        justifyContent: 'center',
+        flexDirection: "row",
+        marginTop: 24
+    },
+
+    col: {
+        marginEnd: 8
+    },
+
+    row: {
+        paddingVertical: 6
+    },
+
+    col_last: {
+        marginEnd: 0
+    },
+
+    link: {
+        textDecorationLine: "underline"
+    },
+
+    link_green: {
+        color: "green"
+    },
+
+    link_red: {
+        color: "red"
+    },
+
+    link_blue: {
+        color: "blue"
+    },
+
+    inputContainer: {
+        width: '100%',
+        marginBottom: 16
+    },
+    inputParent: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: '#f2f2f2',
+        borderRadius: 10,
+        paddingHorizontal: 12,
+        height: 46,
+    },
+    inputText: {
+        flex: 1,
+        fontSize: 16,
+        color: '#333',
+        height: '100%',
+    },
+
     // CONTENT
     content: {
         flex: 1,
@@ -117,6 +170,16 @@ export const styles = StyleSheet.create({
         width: "100%",
         alignItems: 'stretch',
         backgroundColor: "whitesmoke",
+    },
+
+    content_admin: {
+        
+    },
+
+    content_profile: {
+        alignItems: 'stretch',
+        justifyContent: "center",
+        paddingVertical: 32
     },
 
 
@@ -205,4 +268,30 @@ export const styles = StyleSheet.create({
     likedArticle__text: {
     },
 
+
+    // ADMIN
+    adminButtons: {
+        flexDirection: "row",
+        justifyContent: "space-between"
+    },
+
+    adminBtn: {
+        marginEnd: 8,
+    },
+
+    // PROFILE
+    profileTitle: {
+        flexDirection: "row",
+        alignItems: "center"
+    },
+
+    profileTexts: {
+        marginBottom: 32
+    },
+
+    importantButtons: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+        marginTop: 16
+    },
 });
