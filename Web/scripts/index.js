@@ -1,13 +1,32 @@
+const searchFilters = $(".searchFilter")
+const searchBar = $("#searchBar")[0];
+
 if(data) {
     const resultElt = document.getElementById("searchResultContent");
 
     data.content.forEach(content => {
         let article = document.createElement("article")
-        article.classList.add("col-4");
+        $(article).addClass("col-4 contentResult").data("name", content.title);
 
         let link = document.createElement("a");
         link.classList.add("card", "shadow-sm", "link-dark", "link-underline-opacity-0")
-        link.setAttribute("href", `./Views/content.html?id=${content.id}`)
+
+        let href = "";
+        let filter = "";
+
+        if(data.pages.includes(content)) {
+            href = "./Views/content.html";
+            filter = "pageContent"
+        }
+        else {
+            href = "./Views/respEx.html";
+            filter = "exerResp"
+        }
+
+        $(article).data("filter", filter)
+        href += `?id=${content.id}`;
+
+        link.setAttribute("href", href)
         article.appendChild(link);
 
         let img = document.createElement("img");
@@ -31,4 +50,50 @@ if(data) {
 
         resultElt.appendChild(article);
     });
+
+    $(".contentResult").each(function() {
+        CheckIfDisplayed(this);
+    })
+
+    $(searchFilters).on("change", function() {
+        $(".contentResult").each(function() {
+            CheckIfDisplayed(this);
+        })
+    })
+
+    $(searchBar).on("input", function() {
+        let value = $(this).val()
+    
+        $(".contentResult").each(function() {
+            CheckIfDisplayed(this);
+        })
+    })
+
+}
+
+
+
+
+
+function CheckIfDisplayed(element) {
+    let filter = $(element).data("filter");
+
+    let filterChecked = false;
+
+    $(".searchFilter").each(function() {
+        if($(this).data("filter") === filter) {
+            filterChecked = this.checked;
+        }
+    })
+    
+    if(!filterChecked) {
+        $(element).toggleClass("d-none", true);
+        return;
+    }
+
+
+
+    let value = $(searchBar).val()
+    let searchMatches = $(element).data("name").includes(value);
+    $(element).toggleClass("d-none", !searchMatches);
 }

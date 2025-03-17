@@ -6,89 +6,100 @@
     <title>CESIZen</title>
     <link rel="stylesheet" href="./src/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./src/css/bootstrap-icons.min.css">
 </head>
 <body>
     <main class="d-flex flex-column" style="height:100vh">
 
-        <header class="bg-primary">
+        <header class="bg-primary py-2">
             <div class="container">
-                <div class="row justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center">
                     <div class="w-auto d-flex align-items-center">
-                        <a href="index.html" class="link-light link-underline-opacity-0">
-                            <h1>CESIZen</h1>
+                        <a href="index.html" class="link-light link-underline-opacity-0 me-4">
+                            <h1 class="m-0">CESIZen</h1>
                         </a>
-                        <div class="d-flex ms-4">
-                            <div class="dropdown show">
-                                <a 
-                                    href="#" 
-                                    role="button" 
-                                    id="dropdownNotif" 
-                                    data-bs-toggle="dropdown" 
-                                    aria-haspopup="true" 
-                                    aria-expanded="false" 
-                                    class="link-light link-underline-opacity-0">
-                                    Notifications
-                                </a>
-
-                                <div class="dropdown-menu bg-light-subtle" style="width:480px " aria-labelledby="dropdownNotif">
-                                    <div class="container w-75 mb-2">
-                                        <div class="row">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <p class="fw-bold m-0">Exercice 1</h3>
-                                                    <p class="m-0">Une nouvelle ressource a été rajoutée à la catégorie <strong>Exercice de respiration</strong>.</p>
-                                                    <p class="m-0 text-body-tertiary">Découvrez-la maintenant!</p>
-                                                </div>
-                                            </div>                                             
-                                        </div>
-                                    </div>
-
-                                    <div class="container w-75">
-                                        <div class="row">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <p class="fw-bold m-0">Exercice 1</h3>
-                                                    <p class="m-0">Une nouvelle ressource a été rajoutée à la catégorie <strong>Exercice de respiration</strong>.</p>
-                                                    <p class="m-0 text-body-tertiary">Découvrez-la maintenant!</p>
-                                                </div>
-                                            </div>                                             
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="Views/liked.html" class="ms-2 link-light link-underline-opacity-0">Favoris</a>
-                        </div>
+                        <a href="Views/liked.html" class="link-light link-underline-opacity-0">Favoris</a>
                     </div>
 
 
+                    <div class="fs-3 d-flex align-items-center">
+                        <div class="me-4">
+                            <a 
+                                href="./Views/admin.html" 
+                                class="link-light link-underline-opacity-0">
+                                <i class="bi bi-shield-lock-fill"></i>
+                            </a>
+                        </div>
+
+                        <div class="dropdown show me-4">
+                            <a 
+                                href="#" 
+                                role="button" 
+                                id="dropdownNotif" 
+                                data-bs-toggle="dropdown" 
+                                aria-haspopup="true" 
+                                aria-expanded="false" 
+                                class="link-light link-underline-opacity-0">
+                                <i class="bi bi-bell-fill"></i>
+                            </a>
+
+                            <div class="dropdown-menu bg-light-subtle" style="width:480px " aria-labelledby="dropdownNotif">
+                                <div class="container w-75 mb-2">
+                                    <div class="row">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <p class="fw-bold m-0">Exercice 1</h3>
+                                                <p class="m-0">Une nouvelle ressource a été rajoutée à la catégorie <strong>Exercice de respiration</strong>.</p>
+                                                <p class="m-0 text-body-tertiary">Découvrez-la maintenant!</p>
+                                            </div>
+                                        </div>                                             
+                                    </div>
+                                </div>
+
+                                <div class="container w-75">
+                                    <div class="row">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <p class="fw-bold m-0">Exercice 1</h3>
+                                                <p class="m-0">Une nouvelle ressource a été rajoutée à la catégorie <strong>Exercice de respiration</strong>.</p>
+                                                <p class="m-0 text-body-tertiary">Découvrez-la maintenant!</p>
+                                            </div>
+                                        </div>                                             
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="dropdown show w-auto">
+                            <a 
+                                href="#" 
+                                role="button" 
+                                id="dropdownProfile" 
+                                data-bs-toggle="dropdown" 
+                                aria-haspopup="true" 
+                                aria-expanded="false" 
+                                class="link-light link-underline-opacity-0">
+                                <i class="bi bi-person-circle"></i>
+                            </a>
+
+                            <div class="dropdown-menu p-0" style="width:260px" aria-labelledby="dropdownProfile">
+                                <div class="p-2 d-flex">
+                                    <div class="me-2">
+                                        <div class="bg-secondary rounded" style="width:64px; height: 64px;">
+
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="m-0">Paul</p>
+                                        <p class="text-body-tertiary m-0">Membre depuis 5 mois</p>
+                                    </div>                                
+                                </div>
+
+                            </div>
+                        </div>                        
+                    </div>
                     <!-- PROFIL -->
-                    <div class="dropdown show w-auto">
-                        <a 
-                            href="#" 
-                            role="button" 
-                            id="dropdownProfile" 
-                            data-bs-toggle="dropdown" 
-                            aria-haspopup="true" 
-                            aria-expanded="false" 
-                            class="link-light link-underline-opacity-0">
-                            Profil
-                        </a>
 
-                        <div class="dropdown-menu p-0" style="width:260px" aria-labelledby="dropdownProfile">
-                            <div class="p-2 d-flex">
-                                <div class="me-2">
-                                    <div class="bg-secondary rounded" style="width:64px; height: 64px;">
-
-                                    </div>
-                                </div>
-                                <div>
-                                    <p class="m-0">Paul</p>
-                                    <p class="text-body-tertiary m-0">Membre depuis 5 mois</p>
-                                </div>                                
-                            </div>
-
-                        </div>
-                    </div>
 
                     <!-- REGISTER -->
                     <!-- <div class="dropdown show w-auto">
@@ -123,15 +134,15 @@
                     <!-- SEARCH -->
                     <div class="mb-5">
                         <h2 class="text-center">Recherche de ressources</h2>
-                        <input type="search" placeholder="Rechercher des ressources..." name="" id="" class="mx-auto form-control w-50">                        
+                        <input type="search" placeholder="Rechercher des ressources..." name="" id="searchBar" class="mx-auto form-control w-50">                        
                     </div>
 
                     <!-- FILTERS -->
                     <div>
-                        <input type="checkbox" id="pageContentFilter" class="btn-check" checked>
+                        <input type="checkbox" id="pageContentFilter" class="btn-check searchFilter" data-filter="pageContent" checked>
                         <label class="btn btn-outline-primary" for="pageContentFilter">Pages de contenus</label>
 
-                        <input type="checkbox" id="pageExerResp" class="btn-check" checked>
+                        <input type="checkbox" id="pageExerResp" class="btn-check searchFilter" data-filter="exerResp" checked>
                         <label class="btn btn-outline-primary" for="pageExerResp">Exercices de respiration</label>
                     </div>
 

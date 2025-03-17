@@ -120,18 +120,18 @@
                 <div class="mb-5">
                     <h2 class="text-center">Base de données utilisateur</h2>
 
-                    <input type="search" placeholder="Nom ou ID d'utilisateur" name="" id="" class="mx-auto form-control w-50">
+                    <input type="search" placeholder="Nom ou ID d'utilisateur" name="" id="adminSearchBar" class="mx-auto form-control w-50">
                 </div>
 
                 <!-- FILTERS -->
                 <div class="d-flex justify-content-center mb-3">
-                    <input type="radio" name="typeUser" id="adminAllUsers" class="btn-check" checked>
+                    <input type="radio" name="typeUser" id="adminAllUsers" class="btn-check adminFilter" checked>
                     <label class="btn btn-outline-primary me-2" for="adminAllUsers">Tous les utilisateurs</label>
 
-                    <input type="radio" name="typeUser" id="adminBlacklist" class="btn-check me-2">
+                    <input type="radio" name="typeUser" id="adminBlacklist" class="btn-check me-2 adminFilter">
                     <label class="btn btn-outline-primary me-2" for="adminBlacklist">Blacklist</label>
 
-                    <input type="radio" name="typeUser" id="adminWhitelist" class="btn-check">
+                    <input type="radio" name="typeUser" id="adminWhitelist" class="btn-check adminFilter">
                     <label class="btn btn-outline-primary" for="adminWhitelist">Whitelist</label>
                 </div>
                 
@@ -143,6 +143,7 @@
                             <th>Inscription</th>
                             <th>Dernier changement de statut</th>
                             <th>Statut</th>
+                            <th>Promotion</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
