@@ -9,7 +9,8 @@ const json = `{
         {"id":7,"firstName":"Alexander","lastName":"Jones","maidenName":"","age":38,"gender":"male","email":"alexander.jones@x.dummyjson.com","phone":"+61 260-824-4986","username":"alexanderj","password":"alexanderjpass","birthDate":"1986-10-20","image":"https://dummyjson.com/icon/alexanderj/128","bloodGroup":"AB-","height":153.89,"weight":77.42,"eyeColor":"Blue","hair":{"color":"White","type":"Straight"},"ip":"166.204.84.32","address":{"address":"664 Maple Street","city":"Indianapolis","state":"Delaware","stateCode":"DE","postalCode":"86684","coordinates":{"lat":35.289664,"lng":7.063255},"country":"United States"},"macAddress":"d2:64:58:2d:1c:46","university":"University of Illinois--Urbana-Champaign","bank":{"cardExpire":"05/25","cardNumber":"7344951706130140","cardType":"JCB","currency":"EUR","iban":"49V4GVDVMP0MHIDD4VXMQ3A2"},"company":{"department":"Engineering","name":"Dickens - Beahan","title":"Web Developer","address":{"address":"996 Eighth Street","city":"Washington","state":"Kansas","stateCode":"KS","postalCode":"27858","coordinates":{"lat":-75.462366,"lng":-128.025697},"country":"United States"}},"ein":"638-127","ssn":"722-993-925","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36","crypto":{"coin":"Bitcoin","wallet":"0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a","network":"Ethereum (ERC20)"},"role":"moderator"},
         {"id":8,"firstName":"Ava","lastName":"Taylor","maidenName":"","age":27,"gender":"female","email":"ava.taylor@x.dummyjson.com","phone":"+1 458-853-7877","username":"avat","password":"avatpass","birthDate":"1997-8-25","image":"https://dummyjson.com/icon/avat/128","bloodGroup":"AB-","height":168.47,"weight":57.08,"eyeColor":"Hazel","hair":{"color":"Red","type":"Kinky"},"ip":"150.73.197.233","address":{"address":"1197 First Street","city":"Fort Worth","state":"Rhode Island","stateCode":"RI","postalCode":"24771","coordinates":{"lat":-81.194833,"lng":-87.948158},"country":"United States"},"macAddress":"8d:2e:c2:d6:e7:a8","university":"University of Wisconsin--Madison","bank":{"cardExpire":"01/29","cardNumber":"6412128967460199","cardType":"Maestro","currency":"CNY","iban":"TS66YQ8R16OX7IJKLUONDQHP"},"company":{"department":"Marketing","name":"Nikolaus Inc","title":"Chief Executive Officer","address":{"address":"930 Lincoln Street","city":"Austin","state":"Colorado","stateCode":"CO","postalCode":"47592","coordinates":{"lat":87.970083,"lng":-42.769351},"country":"United States"}},"ein":"297-762","ssn":"257-419-109","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36","crypto":{"coin":"Bitcoin","wallet":"0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a","network":"Ethereum (ERC20)"},"role":"moderator"},
         {"id":9,"firstName":"Ethan","lastName":"Martinez","maidenName":"","age":33,"gender":"male","email":"ethan.martinez@x.dummyjson.com","phone":"+92 933-608-5081","username":"ethanm","password":"ethanmpass","birthDate":"1991-2-12","image":"https://dummyjson.com/icon/ethanm/128","bloodGroup":"AB+","height":159.19,"weight":68.81,"eyeColor":"Hazel","hair":{"color":"Purple","type":"Curly"},"ip":"63.191.127.71","address":{"address":"466 Pine Street","city":"San Antonio","state":"Louisiana","stateCode":"LA","postalCode":"72360","coordinates":{"lat":74.074918,"lng":-25.312703},"country":"United States"},"macAddress":"59:e:9e:e3:29:da","university":"Syracuse University","bank":{"cardExpire":"02/25","cardNumber":"7183482484317509","cardType":"Visa","currency":"CAD","iban":"CW5U5KS23U7JYD22TVQL7SIH"},"company":{"department":"Support","name":"Gorczany - Gottlieb","title":"Legal Counsel","address":{"address":"1597 Oak Street","city":"Chicago","state":"Florida","stateCode":"FL","postalCode":"28100","coordinates":{"lat":-67.45208,"lng":-23.209886},"country":"United States"}},"ein":"790-434","ssn":"569-650-348","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36","crypto":{"coin":"Bitcoin","wallet":"0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a","network":"Ethereum (ERC20)"},"role":"moderator"},
-        {"id":10,"firstName":"Isabella","lastName":"Anderson","maidenName":"Davis","age":31,"gender":"female","email":"isabella.anderson@x.dummyjson.com","phone":"+49 770-658-4885","username":"isabellad","password":"isabelladpass","birthDate":"1993-6-10","image":"https://dummyjson.com/icon/isabellad/128","bloodGroup":"A-","height":150.56,"weight":50.1,"eyeColor":"Brown","hair":{"color":"Blonde","type":"Curly"},"ip":"114.9.114.205","address":{"address":"1964 Oak Street","city":"New York","state":"Utah","stateCode":"UT","postalCode":"89352","coordinates":{"lat":41.331324,"lng":151.782727},"country":"United States"},"macAddress":"b1:b0:d0:a2:82:80","university":"California Institute of Technology (Caltech)","bank":{"cardExpire":"05/27","cardNumber":"6118714010128731","cardType":"NPS","currency":"CNY","iban":"GBZRGDMKUOTO34HBCI7A986J"},"company":{"department":"Marketing","name":"Pollich - Hilpert","title":"Chief Financial Officer","address":{"address":"1029 Adams Street","city":"San Diego","state":"Maryland","stateCode":"MD","postalCode":"63847","coordinates":{"lat":-25.843393,"lng":-62.692681},"country":"United States"}},"ein":"127-297","ssn":"902-438-728","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36","crypto":{"coin":"Bitcoin","wallet":"0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a","network":"Ethereum (ERC20)"},"role":"moderator"}
+        {"id":10,"firstName":"Isabella","lastName":"Anderson","maidenName":"Davis","age":31,"gender":"female","email":"isabella.anderson@x.dummyjson.com","phone":"+49 770-658-4885","username":"isabellad","password":"isabelladpass","birthDate":"1993-6-10","image":"https://dummyjson.com/icon/isabellad/128","bloodGroup":"A-","height":150.56,"weight":50.1,"eyeColor":"Brown","hair":{"color":"Blonde","type":"Curly"},"ip":"114.9.114.205","address":{"address":"1964 Oak Street","city":"New York","state":"Utah","stateCode":"UT","postalCode":"89352","coordinates":{"lat":41.331324,"lng":151.782727},"country":"United States"},"macAddress":"b1:b0:d0:a2:82:80","university":"California Institute of Technology (Caltech)","bank":{"cardExpire":"05/27","cardNumber":"6118714010128731","cardType":"NPS","currency":"CNY","iban":"GBZRGDMKUOTO34HBCI7A986J"},"company":{"department":"Marketing","name":"Pollich - Hilpert","title":"Chief Financial Officer","address":{"address":"1029 Adams Street","city":"San Diego","state":"Maryland","stateCode":"MD","postalCode":"63847","coordinates":{"lat":-25.843393,"lng":-62.692681},"country":"United States"}},"ein":"127-297","ssn":"902-438-728","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36","crypto":{"coin":"Bitcoin","wallet":"0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a","network":"Ethereum (ERC20)"},"role":"moderator"},
+        {"id":500,"firstName":"Paul","lastName":"Vincent","maidenName":"","age":27,"gender":"male","email":"paul.vincent@x.dummyjson.com","phone":"+49 770-658-4885","username":"isabellad","password":"isabelladpass","birthDate":"1998-03-20","image":"https://dummyjson.com/icon/isabellad/128","bloodGroup":"A-","height":150.56,"weight":50.1,"eyeColor":"Brown","hair":{"color":"Blonde","type":"Curly"},"ip":"114.9.114.205","address":{"address":"1964 Oak Street","city":"New York","state":"Utah","stateCode":"UT","postalCode":"89352","coordinates":{"lat":41.331324,"lng":151.782727},"country":"United States"},"macAddress":"b1:b0:d0:a2:82:80","university":"California Institute of Technology (Caltech)","bank":{"cardExpire":"05/27","cardNumber":"6118714010128731","cardType":"NPS","currency":"CNY","iban":"GBZRGDMKUOTO34HBCI7A986J"},"company":{"department":"Marketing","name":"Pollich - Hilpert","title":"Chief Financial Officer","address":{"address":"1029 Adams Street","city":"San Diego","state":"Maryland","stateCode":"MD","postalCode":"63847","coordinates":{"lat":-25.843393,"lng":-62.692681},"country":"United States"}},"ein":"127-297","ssn":"902-438-728","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36","crypto":{"coin":"Bitcoin","wallet":"0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a","network":"Ethereum (ERC20)"},"role":"moderator"}
     ],
     "posts":[
         {"id":1,"title":"His mother had always taught him","body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consectetur velit vel massa finibus rhoncus. Duis nisi metus, ornare egestas cursus et, commodo quis augue. Vivamus tincidunt leo tempor lacus bibendum, at feugiat turpis malesuada. Aliquam erat volutpat. Phasellus eu ex mattis, suscipit nisi rhoncus, blandit mauris. Morbi ullamcorper mi quis nisi viverra bibendum. Proin eleifend diam ut dolor efficitur, vel imperdiet orci volutpat. In id tincidunt velit. Sed non maximus neque.\\nDonec faucibus, justo at consectetur hendrerit, enim enim euismod quam, eget eleifend tortor est at enim. Duis at condimentum eros. Cras porta orci non orci accumsan egestas. Aliquam finibus placerat diam, non fringilla libero eleifend ut. Vestibulum bibendum placerat ultrices. Nunc a sem condimentum eros aliquam pellentesque porta vitae nisi. Maecenas nec feugiat justo. Vivamus varius at nibh ut cursus. Nam scelerisque, eros a tempus vestibulum, est diam cursus lorem, ac molestie elit nulla nec mi. Aliquam erat volutpat. Phasellus non ligula quis metus tristique vestibulum. Sed in nunc scelerisque neque placerat pulvinar nec sed sem.\\nPhasellus cursus condimentum sodales. Cras eget mauris posuere, malesuada ex ac, ullamcorper lacus. Fusce blandit arcu ante. Suspendisse eu orci eget velit euismod volutpat. Donec eget rhoncus sapien. Proin augue arcu, laoreet vitae tincidunt eget, imperdiet ac enim. Nunc ipsum ligula, suscipit eleifend quam ac, scelerisque gravida ante. Vivamus elementum accumsan nulla, ut ultrices nisi egestas id. Proin tempus sem id neque luctus faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc pretium hendrerit orci, at ultricies sem tincidunt vitae.\\nEtiam porttitor magna eget massa consectetur, eu sollicitudin nunc lacinia. Cras dignissim hendrerit orci et lobortis. Nunc euismod facilisis massa, ut vulputate elit ultricies et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque tincidunt in nunc at lacinia. Maecenas viverra est in fringilla accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\nPhasellus diam purus, fringilla in neque in, venenatis interdum mauris. Phasellus mattis placerat libero nec congue. Morbi viverra risus ut massa varius, iaculis semper mi molestie. Fusce ut lectus mauris. Quisque vitae libero neque. Vestibulum faucibus vehicula mi ac efficitur. Morbi molestie interdum quam ut volutpat. Curabitur ipsum ligula, elementum sed ipsum eget, laoreet varius nisi. Aenean ullamcorper ligula id quam cursus commodo. Nam dapibus ligula id mattis lacinia. Sed viverra ut mauris vel posuere. Aliquam ac nulla non ante varius pretium a non justo. Proin aliquam ut tellus nec tristique. Nunc pulvinar risus sit amet metus blandit, egestas suscipit urna dictum.","tags":["history","american","crime"],"reactions":{"likes":192,"dislikes":25},"views":305,"userId":121},
@@ -19,6 +20,74 @@ const json = `{
         {"id":5,"title":"Hopes and dreams were dashed that day.","body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consectetur velit vel massa finibus rhoncus. Duis nisi metus, ornare egestas cursus et, commodo quis augue. Vivamus tincidunt leo tempor lacus bibendum, at feugiat turpis malesuada. Aliquam erat volutpat. Phasellus eu ex mattis, suscipit nisi rhoncus, blandit mauris. Morbi ullamcorper mi quis nisi viverra bibendum. Proin eleifend diam ut dolor efficitur, vel imperdiet orci volutpat. In id tincidunt velit. Sed non maximus neque.\\nDonec faucibus, justo at consectetur hendrerit, enim enim euismod quam, eget eleifend tortor est at enim. Duis at condimentum eros. Cras porta orci non orci accumsan egestas. Aliquam finibus placerat diam, non fringilla libero eleifend ut. Vestibulum bibendum placerat ultrices. Nunc a sem condimentum eros aliquam pellentesque porta vitae nisi. Maecenas nec feugiat justo. Vivamus varius at nibh ut cursus. Nam scelerisque, eros a tempus vestibulum, est diam cursus lorem, ac molestie elit nulla nec mi. Aliquam erat volutpat. Phasellus non ligula quis metus tristique vestibulum. Sed in nunc scelerisque neque placerat pulvinar nec sed sem.\\nPhasellus cursus condimentum sodales. Cras eget mauris posuere, malesuada ex ac, ullamcorper lacus. Fusce blandit arcu ante. Suspendisse eu orci eget velit euismod volutpat. Donec eget rhoncus sapien. Proin augue arcu, laoreet vitae tincidunt eget, imperdiet ac enim. Nunc ipsum ligula, suscipit eleifend quam ac, scelerisque gravida ante. Vivamus elementum accumsan nulla, ut ultrices nisi egestas id. Proin tempus sem id neque luctus faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc pretium hendrerit orci, at ultricies sem tincidunt vitae.\\nEtiam porttitor magna eget massa consectetur, eu sollicitudin nunc lacinia. Cras dignissim hendrerit orci et lobortis. Nunc euismod facilisis massa, ut vulputate elit ultricies et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque tincidunt in nunc at lacinia. Maecenas viverra est in fringilla accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\nPhasellus diam purus, fringilla in neque in, venenatis interdum mauris. Phasellus mattis placerat libero nec congue. Morbi viverra risus ut massa varius, iaculis semper mi molestie. Fusce ut lectus mauris. Quisque vitae libero neque. Vestibulum faucibus vehicula mi ac efficitur. Morbi molestie interdum quam ut volutpat. Curabitur ipsum ligula, elementum sed ipsum eget, laoreet varius nisi. Aenean ullamcorper ligula id quam cursus commodo. Nam dapibus ligula id mattis lacinia. Sed viverra ut mauris vel posuere. Aliquam ac nulla non ante varius pretium a non justo. Proin aliquam ut tellus nec tristique. Nunc pulvinar risus sit amet metus blandit, egestas suscipit urna dictum.","tags":["crime","mystery","love"],"reactions":{"likes":119,"dislikes":30},"views":626,"userId":131},
         {"id":6,"title":"Dave wasn't exactly sure how he had ended up","body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consectetur velit vel massa finibus rhoncus. Duis nisi metus, ornare egestas cursus et, commodo quis augue. Vivamus tincidunt leo tempor lacus bibendum, at feugiat turpis malesuada. Aliquam erat volutpat. Phasellus eu ex mattis, suscipit nisi rhoncus, blandit mauris. Morbi ullamcorper mi quis nisi viverra bibendum. Proin eleifend diam ut dolor efficitur, vel imperdiet orci volutpat. In id tincidunt velit. Sed non maximus neque.\\nDonec faucibus, justo at consectetur hendrerit, enim enim euismod quam, eget eleifend tortor est at enim. Duis at condimentum eros. Cras porta orci non orci accumsan egestas. Aliquam finibus placerat diam, non fringilla libero eleifend ut. Vestibulum bibendum placerat ultrices. Nunc a sem condimentum eros aliquam pellentesque porta vitae nisi. Maecenas nec feugiat justo. Vivamus varius at nibh ut cursus. Nam scelerisque, eros a tempus vestibulum, est diam cursus lorem, ac molestie elit nulla nec mi. Aliquam erat volutpat. Phasellus non ligula quis metus tristique vestibulum. Sed in nunc scelerisque neque placerat pulvinar nec sed sem.\\nPhasellus cursus condimentum sodales. Cras eget mauris posuere, malesuada ex ac, ullamcorper lacus. Fusce blandit arcu ante. Suspendisse eu orci eget velit euismod volutpat. Donec eget rhoncus sapien. Proin augue arcu, laoreet vitae tincidunt eget, imperdiet ac enim. Nunc ipsum ligula, suscipit eleifend quam ac, scelerisque gravida ante. Vivamus elementum accumsan nulla, ut ultrices nisi egestas id. Proin tempus sem id neque luctus faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc pretium hendrerit orci, at ultricies sem tincidunt vitae.\\nEtiam porttitor magna eget massa consectetur, eu sollicitudin nunc lacinia. Cras dignissim hendrerit orci et lobortis. Nunc euismod facilisis massa, ut vulputate elit ultricies et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque tincidunt in nunc at lacinia. Maecenas viverra est in fringilla accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\nPhasellus diam purus, fringilla in neque in, venenatis interdum mauris. Phasellus mattis placerat libero nec congue. Morbi viverra risus ut massa varius, iaculis semper mi molestie. Fusce ut lectus mauris. Quisque vitae libero neque. Vestibulum faucibus vehicula mi ac efficitur. Morbi molestie interdum quam ut volutpat. Curabitur ipsum ligula, elementum sed ipsum eget, laoreet varius nisi. Aenean ullamcorper ligula id quam cursus commodo. Nam dapibus ligula id mattis lacinia. Sed viverra ut mauris vel posuere. Aliquam ac nulla non ante varius pretium a non justo. Proin aliquam ut tellus nec tristique. Nunc pulvinar risus sit amet metus blandit, egestas suscipit urna dictum.","tags":["english","classic","american"],"reactions":{"likes":15,"dislikes":8},"views":38,"userId":98}]
 }`
+
+let src = $(document.currentScript).attr("src").split("/");
+let path = "";
+
+for(let i = 0; i < src.length; i++) {
+    if(src[i] !== '.' && src[i] !== '..') {
+        break;
+    }
+
+    path += src[i] + "/";
+}
+
+
+class Post {
+    constructor(content) {
+        this.id = content.id;
+        this.title = content.title;
+        this.body = content.body;
+        this.content = content;
+    }
+
+    CreateElement() {
+        let article = document.createElement("article")
+        $(article).addClass("col-4 contentResult").data("name", this.title);
+
+        let link = document.createElement("a");
+        link.classList.add("card", "shadow-sm", "link-dark", "link-underline-opacity-0")
+
+        let href = path;
+        let filter = "";
+
+        if(data.pages.includes(this.content)) {
+            href += "Views/content.html";
+            filter = "pageContent"
+        }
+        else {
+            href += "Views/respEx.html";
+            filter = "exerResp"
+        }
+
+        $(article).data("filter", filter)
+        href += `?id=${this.id}`;
+
+        link.setAttribute("href", href)
+        article.appendChild(link);
+
+        let img = document.createElement("img");
+        img.classList.add("card-img-top", "bg-dark");
+        img.style.height = "180px";
+        link.appendChild(img);
+
+        let body = document.createElement("div");
+        body.classList.add("card-body");
+        link.appendChild(body);
+
+        let title = document.createElement("h5");
+        title.classList.add("card-title", "text-truncate");
+        title.innerText = this.title;
+        body.appendChild(title);
+
+        let text = document.createElement("p");
+        text.classList.add("m-0");
+        text.innerText = this.body.slice(0, 123) + "...";
+        body.appendChild(text);
+
+        return article;
+    }
+}
 
 const parsed = JSON.parse(json);
 
@@ -36,3 +105,153 @@ for(let i = 0; i < data.content.length; i++) {
         data.exercices.push(data.content[i]);
     }
 }
+
+
+
+
+
+//#region HEADER
+const headerHTML = `
+<header class="bg-primary py-2">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <a href="${path}index.html" class="link-light link-underline-opacity-0 me-4">
+                <h1 class="m-0">CESIZen</h1>
+            </a>
+
+
+            <div class="fs-3 d-flex align-items-center">
+                <div class="me-4">
+                    <a 
+                        href="${path}Views/admin.html" 
+                        class="link-light link-underline-opacity-0">
+                        <i class="bi bi-shield-lock-fill"></i>
+                    </a>
+                </div>
+
+                <div class="dropdown show me-4">
+                    <a 
+                        href="#" 
+                        role="button" 
+                        id="dropdownNotif" 
+                        data-bs-toggle="dropdown" 
+                        aria-haspopup="true" 
+                        aria-expanded="false" 
+                        class="link-light link-underline-opacity-0">
+                        <i class="bi bi-bell-fill"></i>
+                    </a>
+
+                    <div class="dropdown-menu bg-light-subtle" style="width:480px " aria-labelledby="dropdownNotif">
+                        <div class="container w-75 mb-2">
+                            <div class="row">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p class="fw-bold m-0">Exercice 1</h3>
+                                        <p class="m-0">Une nouvelle ressource a été rajoutée à la catégorie <strong>Exercice de respiration</strong>.</p>
+                                        <p class="m-0 text-body-tertiary">Découvrez-la maintenant!</p>
+                                    </div>
+                                </div>                                             
+                            </div>
+                        </div>
+
+                        <div class="container w-75">
+                            <div class="row">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p class="fw-bold m-0">Exercice 1</h3>
+                                        <p class="m-0">Une nouvelle ressource a été rajoutée à la catégorie <strong>Exercice de respiration</strong>.</p>
+                                        <p class="m-0 text-body-tertiary">Découvrez-la maintenant!</p>
+                                    </div>
+                                </div>                                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dropdown show w-auto">
+                    <a 
+                        href="#" 
+                        role="button" 
+                        id="dropdownProfile" 
+                        data-bs-toggle="dropdown" 
+                        aria-haspopup="true" 
+                        aria-expanded="false" 
+                        class="link-light link-underline-opacity-0">
+                        <i class="bi bi-person-circle"></i>
+                    </a>
+
+                    <div class="dropdown-menu p-0" style="width:260px" aria-labelledby="dropdownProfile">
+                        <div class="p-2 d-flex align-items-center">
+                            <div class="me-2">
+                                <img src="https://dummyjson.com/icon/isabellad/128" class="bg-dark rounded" style="width:64px; height: 64px;">
+                            </div>
+                            <div>
+                                <div class="d-flex justify-content-between w-100>
+                                    <p class="m-0">Paul</p>
+                                    <a href="${path}Views/profile.html?id=500"><i class="bi bi-gear-fill"></i></a>
+                                </div>
+                                <p class="text-body-tertiary m-0">Membre depuis 5 mois</p>
+                                <a href="#">Se déconnecter</a>
+                            </div>                                
+                        </div>
+
+                    </div>
+                </div>                        
+            </div>
+            <!-- PROFIL -->
+
+
+            <!-- REGISTER -->
+            <!-- <div class="dropdown show w-auto">
+                <a 
+                    href="#" 
+                    role="button" 
+                    id="dropdownRegister" 
+                    data-bs-toggle="dropdown" 
+                    aria-haspopup="true" 
+                    aria-expanded="false" 
+                    class="link-light link-underline-opacity-0">
+                    Se connecter
+                </a>
+
+                <div class="dropdown-menu p-2" style="width:260px" aria-labelledby="dropdownRegister">
+                    <p class="text-center mb-2 fw-bold">Connexion</p>
+                    <input type="email" name="" id="" placeholder="Email" class="form-control mb-2">
+                    <input type="password" name="" id="" placeholder="Mot de passe" class="form-control mb-2">
+                    <p class="m-0">Pas encore de compte ? <a href="#" class="link-primary link-underline-opacity-0">S'inscrire</a></p>
+                </div>
+            </div> -->
+
+        </div>                
+    </div>
+</header>
+`;
+//#endregion
+
+
+//#region FOOTER
+const footerHTML = `
+<footer class="bg-dark text-light">
+    <div class="container">
+        <div class="row">
+        </div>                
+    </div>
+</footer>
+`;
+//#endregion
+
+const headerElt = $("#page_header")[0];
+const footerElt = $("#page_footer")[0];
+
+if(headerElt) {
+    let newHeader = $.parseHTML(headerHTML);
+    $(headerElt).before(newHeader);
+    $(headerElt).remove();
+}
+
+if(footerElt) {
+    let newFooter = $.parseHTML(footerHTML);
+    $(footerElt).before(newFooter);
+    $(footerElt).remove();
+}
+

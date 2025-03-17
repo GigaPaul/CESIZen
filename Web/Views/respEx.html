@@ -6,114 +6,13 @@
     <title>CESIZen</title>
     <link rel="stylesheet" href="./../src/css/bootstrap.min.css">
     <link rel="stylesheet" href="./../styles/style.css">
+    <link rel="stylesheet" href="./../src/css/bootstrap-icons.min.css">
 </head>
 <body>
     <main class="d-flex flex-column" style="height:100vh">
 
-        <header class="bg-primary">
-            <div class="container">
-                <div class="row justify-content-between align-items-center">
-                    <div class="w-auto d-flex align-items-center">
-                        <a href="../index.html" class="link-light link-underline-opacity-0">
-                            <h1>CESIZen</h1>
-                        </a>
-                        <div class="d-flex ms-4">
-                            <div class="dropdown show">
-                                <a 
-                                    href="#" 
-                                    role="button" 
-                                    id="dropdownNotif" 
-                                    data-bs-toggle="dropdown" 
-                                    aria-haspopup="true" 
-                                    aria-expanded="false" 
-                                    class="link-light link-underline-opacity-0">
-                                    Notifications
-                                </a>
 
-                                <div class="dropdown-menu bg-light-subtle" style="width:480px " aria-labelledby="dropdownNotif">
-                                    <div class="container w-75 mb-2">
-                                        <div class="row">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <p class="fw-bold m-0">Exercice 1</h3>
-                                                    <p class="m-0">Une nouvelle ressource a été rajoutée à la catégorie <strong>Exercice de respiration</strong>.</p>
-                                                    <p class="m-0 text-body-tertiary">Découvrez-la maintenant!</p>
-                                                </div>
-                                            </div>                                             
-                                        </div>
-                                    </div>
-
-                                    <div class="container w-75">
-                                        <div class="row">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <p class="fw-bold m-0">Exercice 1</h3>
-                                                    <p class="m-0">Une nouvelle ressource a été rajoutée à la catégorie <strong>Exercice de respiration</strong>.</p>
-                                                    <p class="m-0 text-body-tertiary">Découvrez-la maintenant!</p>
-                                                </div>
-                                            </div>                                             
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="liked.html" class="ms-2 link-light link-underline-opacity-0">Favoris</a>
-                        </div>
-                    </div>
-
-
-                    <!-- PROFIL -->
-                    <div class="dropdown show w-auto">
-                        <a 
-                            href="#" 
-                            role="button" 
-                            id="dropdownProfile" 
-                            data-bs-toggle="dropdown" 
-                            aria-haspopup="true" 
-                            aria-expanded="false" 
-                            class="link-light link-underline-opacity-0">
-                            Profil
-                        </a>
-
-                        <div class="dropdown-menu p-0" style="width:260px" aria-labelledby="dropdownProfile">
-                            <div class="p-2 d-flex">
-                                <div class="me-2">
-                                    <div class="bg-secondary rounded" style="width:64px; height: 64px;">
-
-                                    </div>
-                                </div>
-                                <div>
-                                    <p class="m-0">Paul</p>
-                                    <p class="text-body-tertiary m-0">Membre depuis 5 mois</p>
-                                </div>                                
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- REGISTER -->
-                    <!-- <div class="dropdown show w-auto">
-                        <a 
-                            href="#" 
-                            role="button" 
-                            id="dropdownRegister" 
-                            data-bs-toggle="dropdown" 
-                            aria-haspopup="true" 
-                            aria-expanded="false" 
-                            class="link-light link-underline-opacity-0">
-                            Se connecter
-                        </a>
-
-                        <div class="dropdown-menu p-2" style="width:260px" aria-labelledby="dropdownRegister">
-                            <p class="text-center mb-2 fw-bold">Connexion</p>
-                            <input type="email" name="" id="" placeholder="Email" class="form-control mb-2">
-                            <input type="password" name="" id="" placeholder="Mot de passe" class="form-control mb-2">
-                            <p class="m-0">Pas encore de compte ? <a href="#" class="link-primary link-underline-opacity-0">S'inscrire</a></p>
-                        </div>
-                    </div> -->
-
-                </div>                
-            </div>
-        </header>
+        <header id="page_header"></header>
 
         <div class="flex-grow-1 py-4">
             <div class="container h-100">
@@ -151,12 +50,7 @@
 
         </div>
 
-        <footer class="bg-dark text-light">
-            <div class="container">
-                <div class="row">
-                </div>                
-            </div>
-        </footer>
+        <footer id="page_footer"></footer>
     </main>
 
 </body>

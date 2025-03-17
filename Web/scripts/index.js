@@ -5,50 +5,9 @@ if(data) {
     const resultElt = document.getElementById("searchResultContent");
 
     data.content.forEach(content => {
-        let article = document.createElement("article")
-        $(article).addClass("col-4 contentResult").data("name", content.title);
+        let elt = new Post(content).CreateElement();
 
-        let link = document.createElement("a");
-        link.classList.add("card", "shadow-sm", "link-dark", "link-underline-opacity-0")
-
-        let href = "";
-        let filter = "";
-
-        if(data.pages.includes(content)) {
-            href = "./Views/content.html";
-            filter = "pageContent"
-        }
-        else {
-            href = "./Views/respEx.html";
-            filter = "exerResp"
-        }
-
-        $(article).data("filter", filter)
-        href += `?id=${content.id}`;
-
-        link.setAttribute("href", href)
-        article.appendChild(link);
-
-        let img = document.createElement("img");
-        img.classList.add("card-img-top", "bg-black");
-        img.style.height = "180px";
-        link.appendChild(img);
-
-        let body = document.createElement("div");
-        body.classList.add("card-body");
-        link.appendChild(body);
-
-        let title = document.createElement("h5");
-        title.classList.add("card-title", "text-truncate");
-        title.innerText = content.title;
-        body.appendChild(title);
-
-        let text = document.createElement("p");
-        text.classList.add("m-0");
-        text.innerText = content.body.slice(0, 123) + "...";
-        body.appendChild(text);
-
-        resultElt.appendChild(article);
+        resultElt.appendChild(elt);
     });
 
     $(".contentResult").each(function() {
@@ -61,9 +20,7 @@ if(data) {
         })
     })
 
-    $(searchBar).on("input", function() {
-        let value = $(this).val()
-    
+    $(searchBar).on("input", function() {    
         $(".contentResult").each(function() {
             CheckIfDisplayed(this);
         })

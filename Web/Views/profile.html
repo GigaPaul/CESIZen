@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CESIZen</title>
+    <link rel="stylesheet" href="./../src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../styles/style.css">
+    <link rel="stylesheet" href="./../src/css/bootstrap-icons.min.css">
+</head>
+<body>
+    <main class="d-flex flex-column" style="height:100vh">
+        <header id="page_header"></header>
+
+        <div class="flex-grow-1 py-4">
+            <div class="container h-100">
+
+                <img id="profileImg" class="bg-dark d-block mx-auto" style="border-radius: 50%; width: 200px; height: 200px;"></img>
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-end">
+                        <h2 id="profileName" class="m-0"></h2>
+                        <p id="profileId" class="m-0">#500</p>
+                    </div>
+
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownProfile" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bi bi-gear-fill"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownProfile">
+                                <a class="dropdown-item" id="editProfile" href="#">Éditer</a>
+                                <a class="dropdown-item" href="#">Supprimer données personnelles</a>
+                                <a class="dropdown-item" href="#">Supprimer compte</a>
+                            </div>
+                        </div>
+                </div>
+
+
+
+                <div id="aPropos">
+                    <h3>À propos</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus consectetur felis eget blandit. Donec nec massa pharetra, rhoncus erat quis, blandit lectus. Proin dapibus lacus ac ante efficitur, eu mattis leo vulputate. Aliquam et ex id mi gravida volutpat. Morbi ut aliquet dui, eget tempor erat. Mauris quis consequat lectus, quis pulvinar odio. Ut non odio facilisis, luctus urna in, eleifend nibh. Quisque eget augue id nisi tempor rutrum vitae eu nunc.<br><br>Nullam placerat metus ut diam blandit tristique. Proin vel ipsum sit amet quam facilisis feugiat. Aenean vestibulum pretium ornare. Mauris scelerisque aliquet mi, sit amet porttitor nisl pellentesque in. Integer interdum accumsan risus id sagittis. Suspendisse potenti. Praesent congue, dui at vulputate pellentesque, libero nulla lacinia tortor, quis sagittis lorem velit et mauris. Nulla neque velit, bibendum non mattis in, faucibus sed mi. Fusce ut pharetra quam. Duis venenatis iaculis leo, id dictum purus faucibus euismod. Integer sed nulla ac nunc feugiat faucibus. Fusce euismod, felis nec tempus consequat, neque eros venenatis libero, laoreet dignissim enim mi sit amet nisl. Nulla dapibus massa nunc, sed dapibus eros faucibus interdum.</p>
+                </div>
+
+                <div>
+                    <h3>Contenus favoris</h3>
+                    <section class="row g-2" id="favoriteContent">
+                    </section>
+                </div>
+
+            </div>
+            <div id="validateContainer" class="fixed-bottom w-100 d-flex justify-content-center mb-5 d-none">
+                <button id="validateBtn" class="btn btn-lg btn-success">Valider les modifications</button>
+            </div>
+        </div>
+
+
+        <footer id="page_footer"></footer>
+    </main>
+</body>
+<script src="./../src/js/jquery.min.js"></script>
+<script src="./../src/js/bootstrap.bundle.min.js"></script>
+<script src="./../scripts/main.js"></script>
+<script src="./../scripts/profile.js"></script>
+</html>
