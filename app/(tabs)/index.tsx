@@ -12,7 +12,6 @@ import { Search, User } from 'lucide-react-native';
 import { styles } from '../../scripts/style.js'
 import { ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
-import Footer from './../layout/footer'
 
 export default function AppLanding() {
   const [searchQuery, setSearchQuery] = useState('');
