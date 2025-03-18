@@ -26,9 +26,9 @@ if(data) {
 
         let tdName = document.createElement("td");
         let linkName = document.createElement("a")
-        $(linkName).addClass("link-primary tdName");
+        $(linkName).addClass("link-primary tdName").prop("target", "_blank");
         linkName.setAttribute("href", `${path}Views/profile.html?id=${user.id}`);
-        linkName.innerText = user.firstName;
+        linkName.innerText = `${user.firstName} ${user.lastName}`;
         tdName.appendChild(linkName);
         tr.appendChild(tdName)
 

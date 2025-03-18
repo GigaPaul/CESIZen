@@ -1,6 +1,6 @@
-const params = new URLSearchParams(document.location.search);
+const contentParams = new URLSearchParams(document.location.search);
 
-const isEditing = params.get("edit")
+const isEditing = contentParams.get("edit")
 
 if(isEditing === "true") {
     const editables = document.querySelectorAll(".editable");
@@ -10,7 +10,7 @@ if(isEditing === "true") {
     });
 }
 
-const idContent = parseInt(params.get("id"));
+const idContent = parseInt(contentParams.get("id"));
 const container = $("#contentContainer")[0];
 
 const post = data.content.find((content) => content.id === idContent);

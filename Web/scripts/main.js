@@ -120,16 +120,16 @@ const headerHTML = `
             </a>
 
 
-            <div class="fs-3 d-flex align-items-center">
-                <div class="me-4">
+            <div class="d-flex align-items-center">
+                <div class="me-4 showIfLoggedIn">
                     <a 
                         href="${path}Views/admin.html" 
-                        class="link-light link-underline-opacity-0">
+                        class="link-light link-underline-opacity-0 fs-3">
                         <i class="bi bi-shield-lock-fill"></i>
                     </a>
                 </div>
 
-                <div class="dropdown show me-4">
+                <div class="dropdown show me-4 showIfLoggedIn">
                     <a 
                         href="#" 
                         role="button" 
@@ -138,7 +138,7 @@ const headerHTML = `
                         aria-haspopup="true" 
                         aria-expanded="false" 
                         class="link-light link-underline-opacity-0">
-                        <i class="bi bi-bell-fill"></i>
+                        <i class="bi bi-bell-fill fs-3"></i>
                     </a>
 
                     <div class="dropdown-menu bg-light-subtle" style="width:480px " aria-labelledby="dropdownNotif">
@@ -168,7 +168,7 @@ const headerHTML = `
                     </div>
                 </div>
                 
-                <div class="dropdown show w-auto">
+                <div class="dropdown show w-auto showIfLoggedIn">
                     <a 
                         href="#" 
                         role="button" 
@@ -176,7 +176,7 @@ const headerHTML = `
                         data-bs-toggle="dropdown" 
                         aria-haspopup="true" 
                         aria-expanded="false" 
-                        class="link-light link-underline-opacity-0">
+                        class="link-light link-underline-opacity-0 fs-3">
                         <i class="bi bi-person-circle"></i>
                     </a>
 
@@ -191,37 +191,61 @@ const headerHTML = `
                                     <a href="${path}Views/profile.html?id=500"><i class="bi bi-gear-fill"></i></a>
                                 </div>
                                 <p class="text-body-tertiary m-0">Membre depuis 5 mois</p>
-                                <a href="#">Se déconnecter</a>
+                                <a href="?login=false">Se déconnecter</a>
                             </div>                                
                         </div>
 
                     </div>
-                </div>                        
-            </div>
-            <!-- PROFIL -->
-
-
-            <!-- REGISTER -->
-            <!-- <div class="dropdown show w-auto">
-                <a 
-                    href="#" 
-                    role="button" 
-                    id="dropdownRegister" 
-                    data-bs-toggle="dropdown" 
-                    aria-haspopup="true" 
-                    aria-expanded="false" 
-                    class="link-light link-underline-opacity-0">
-                    Se connecter
-                </a>
-
-                <div class="dropdown-menu p-2" style="width:260px" aria-labelledby="dropdownRegister">
-                    <p class="text-center mb-2 fw-bold">Connexion</p>
-                    <input type="email" name="" id="" placeholder="Email" class="form-control mb-2">
-                    <input type="password" name="" id="" placeholder="Mot de passe" class="form-control mb-2">
-                    <p class="m-0">Pas encore de compte ? <a href="#" class="link-primary link-underline-opacity-0">S'inscrire</a></p>
                 </div>
-            </div> -->
+                <!-- REGISTER -->
+                <div class="showIfLoggedOut">
+                    <a 
+                        href="#"
+                        role="button" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#loginModal" 
+                        class="link-light link-underline-opacity-0 fs-3">
+                        <i class="bi bi-door-open-fill"></i>
+                    </a>
 
+                    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header text-center bg-primary text-light">
+                                    <h5 class="modal-title w-100 loginElt" id="loginModalLabelConnexion">Connexion</h5>
+                                    <h5 class="modal-title w-100 signUpElt" id="loginModalLabelInscription">Inscription</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="mb-3">
+                                        <input type="email" id="loginEmail" placeholder="Adresse email" class="form-control mb-3" required/>
+                                        <input type="password" id="loginPassword" placeholder="Mot de passe" class="form-control mb-3" required/>
+                                        <input type="password" placeholder="Confirmez le mot de passe" class="form-control signUpElt"/>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center mb-3">
+                                        <button type="button" class="btn btn-primary w-100 loginElt" id="loginBtn">Se connecter</button>
+                                        <button type="button" class="btn btn-primary w-100 signUpElt">S'inscrire</button>
+                                    </div>
+
+                                    <div class="loginElt d-flex justify-content-between">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="rememberMeCheck">
+                                            <label class="form-check-label" for="rememberMeCheck">Se souvenir de moi</label>
+                                        </div>
+
+                                        <a href="#">Mot de passe oublié?</a>
+                                    </div>
+
+                                    <div class="text-center  mt-5">
+                                        <p class="m-0 loginElt">Pas encore de compte? <a href="#" id="userFormSignUp">Inscrivez-vous maintenant.</a></p>
+                                        <p class="m-0 signUpElt">Déjà inscrit? <a href="#" id="userFormLogIn">Connectez-vous maintenant.</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>       
+            </div>
         </div>                
     </div>
 </header>
@@ -231,10 +255,10 @@ const headerHTML = `
 
 //#region FOOTER
 const footerHTML = `
-<footer class="bg-dark text-light">
+<footer class="bg-dark text-light py-2">
     <div class="container">
         <div class="row">
-        </div>                
+        </div>
     </div>
 </footer>
 `;
@@ -255,3 +279,37 @@ if(footerElt) {
     $(footerElt).remove();
 }
 
+
+const params = new URLSearchParams(document.location.search);
+let hasLoggedInParam = params.get("login");
+const hasLoggedIn = hasLoggedInParam === null ? true : hasLoggedInParam === 'true';
+
+$(".showIfLoggedIn").toggleClass("d-none", !hasLoggedIn);
+$(".showIfLoggedOut").toggleClass("d-none", hasLoggedIn);
+
+$(".signUpElt").addClass("d-none");
+
+$("#userFormSignUp").on("click", function() {
+    $(".signUpElt").removeClass("d-none");
+    $(".loginElt").addClass("d-none");
+})
+
+$("#userFormLogIn").on("click", function() {
+    $(".signUpElt").addClass("d-none");
+    $(".loginElt").removeClass("d-none");
+})
+
+$("#loginBtn").on("click", LogIn)
+
+
+function LogIn() {
+    let email = $("#loginEmail").val().toLowerCase();
+    let password = $("#loginPassword").val();
+
+    if(email !== "paul.vincent.web@gmail.com" || password !== "Motdepasse") {
+        // erreur
+        return;
+    }
+
+    window.location.replace("?");
+}

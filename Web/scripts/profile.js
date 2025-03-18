@@ -7,8 +7,8 @@ const validateContainer = $("#validateContainer")[0];
 const validateBtn = $("#validateBtn")[0];
 const favoriteContent = $("#favoriteContent")[0];
 
-const params = new URLSearchParams(document.location.search);
-const idUser = parseInt(params.get("id"));
+const profileParams = new URLSearchParams(document.location.search);
+const idUser = parseInt(profileParams.get("id"));
 
 const user = data.users.find((user) => user.id === idUser);
 
