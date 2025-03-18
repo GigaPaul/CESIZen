@@ -42,7 +42,27 @@
                     </form>
     
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-success btn-lg">Commencer l'exercice</button>
+                        <button
+                            type="button" 
+                            data-bs-toggle="modal" 
+                            data-bs-target="#testModal" 
+                            id="exStart"
+                            class="btn btn-success btn-lg">
+                            Commencer l'exercice
+                        </button>
+                    </div>
+
+                    <div class="modal fade" id="testModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <p class=" fs-3 fw-bold text-center mb-3" id="exInstruction"></p>
+                                    <div class="d-flex justify-content-center">
+                                        <button type="button" id="exStop" data-bs-dismiss="modal" class="btn btn-danger btn-lg mx-auto">Arrêter</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

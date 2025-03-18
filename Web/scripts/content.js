@@ -63,6 +63,18 @@ if(post) {
                 $(li).text(splitAgain[i] + ".")
                 ol.appendChild(li);
             }
+
+            const startBtn = $("#exStart")[0];
+            const stopBtn = $("#exStop")[0];
+            const instructions = $("#exInstruction")[0];
+
+            $(startBtn).on("click", function() {
+                let cadency = $("#respExCadency").val();
+                let repet = $("#respExRepet").val();
+
+                StartBreathingExercise(cadency, repet)
+            })
+
             break;
         default:
             for(let i = 0; i < split.length; i++) {
@@ -82,4 +94,33 @@ if(post) {
             break;
     }
 
+}
+
+async function StartBreathingExercise(cadency, repet) {
+    const instructions = $("#exInstruction")[0];
+
+    for(let i = 3; i > 0; i--) {
+        $(instructions).text(i);
+        await Wait(1000);
+    }
+    
+    for(let i = 0; i < repet * 2; i++) {
+        if($(instructions).text() === "Inspirez") {
+            $(instructions).text("Expirez")
+        }
+        else {
+            $(instructions).text("Inspirez")
+        }
+        await Wait(cadency * 1000);
+    }
+
+    $(instructions).text("Exercice terminé! Bien joué!")
+}
+
+async function Wait(ms) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve("resolved");
+        }, ms);
+    });
 }
